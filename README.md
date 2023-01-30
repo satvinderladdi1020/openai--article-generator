@@ -38,6 +38,13 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Set process.env.REACT_APP_OPENAI_API_KEY
+The process.env.REACT_APP_OPENAI_API_KEY is an environment variable that holds the OpenAI API key. It is not recommended to hardcode the API key directly in the code, as this could lead to security issues if the code is ever made public. Instead, the API key should be stored as an environment variable, which is accessed using process.env.REACT_APP_OPENAI_API_KEY.
+To set the process.env.REACT_APP_OPENAI_API_KEY environment variable in a React app, you can create a .env file in the root directory of your app and add the following line:
+
+### 'REACT_APP_OPENAI_API_KEY=your_openai_api_key'
+
+Replace your_openai_api_key with your actual OpenAI API key. This .env file will not be committed to source control and should be kept confidential. The environment variable can then be accessed in your React code using process.env.REACT_APP_OPENAI_API_KEY.
 
 ## Learn More
 
